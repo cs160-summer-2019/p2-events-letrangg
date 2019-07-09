@@ -39,9 +39,25 @@
 
 
 <script type="text/javascript">
+//function myFunction() {
+//  setInterval(function(){ alert("Hello"); }, 3000);
+//}
+//setInterval(function() {
+//    alert("Message to alert every 5 seconds");
+//}, 5000);
+//$(document).ready(() => 
+//setInterval(function(){ alert("Hello"); }, 3000);
+//setInterval(function(){ $(".shape-container").append('<div class="p2-circle bg-green></div>');},1000);
+  
+//$(":button").click(function() {
 
-	// your solution here
+var addCircle = setInterval(function() {
+  $(".shape-container").append('<div class="p2-circle bg-green"></div>');
+}, 1000);
 
+$(":button").click(function() {
+  clearInterval(addCircle);
+});
 </script>
 </body>
 </html>
