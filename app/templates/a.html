@@ -67,9 +67,14 @@ $( "p" ).click(function() {
 </script>
 
 <script type="text/javascript">
-$("p2-circle bg-purple").click(function() {
-  $("p2-circle bg-purple").hide();
-})
+$( ".p2-circle.bg-purple" ).click(function() {
+  $( this ).hide();
+});
+  
+$( ".p2-circle.bg-green" ).click(function() {
+  $( this ).hide();
+  $( ".p2-circle.bg-blue" ).hide();
+});
 </script>
 </body>
 </html>
